@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# To-do App 
+
+In this project I used: 
+
+ReactJS (npx create-react-app)
+MaterializeCss (https://materializecss.com/getting-started.html)
+
+Followed the tutorial from youtube's The Net Ninja (https://www.youtube.com/watch?v=3qk6yQWKVoQ&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG&index=23)
 
 ## Available Scripts
 
