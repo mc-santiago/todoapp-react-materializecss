@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <h1 className="center purple-text">Todo's for this week</h1>
+        <h1 className="center purple-text">To-do's for this week</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
         <AddTodo addTodo={this.addTodo} />
       </div>
