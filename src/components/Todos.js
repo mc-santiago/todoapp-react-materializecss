@@ -5,10 +5,12 @@ const Todos = ({todos, deleteTodo}) => {
     const todoList = todos.length ? (
         todos.map(todo => {
             return(
-                <div className="collection-item" key={todo.id}>
-                    <p onClick={() => {deleteTodo(todo.id)}}>
-                    {todo.content}
-                    </p>
+                <div className="collection-item avatar" key={todo.id}>
+                        <img src="https://i.postimg.cc/sfShJ2zH/checklist-2077023-1280.jpg" alt="ckecklist" className="circle"/>
+                        <p>{todo.content}</p>
+                        <a className="secondary-content btn-flat waves-effect waves-light" onClick={() => {deleteTodo(todo.id)}}>
+                            <i className="material-icons">delete</i>
+                        </a>
                 </div>
             )
         })

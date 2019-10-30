@@ -36,6 +36,7 @@ class App extends Component {
     return (
       <div className="App container">
         <h1 className="center">To-do's for this week</h1>
+        <p className="center">(refresh to get the page in another random colour)</p>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
         <AddTodo addTodo={this.addTodo} />
       </div>
