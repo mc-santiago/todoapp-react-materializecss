@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react'
-import Todos from './Todos'
-import AddTodo from './AddTodo'
+import Todos from './components/Todos'
+import AddTodo from './components/AddTodo'
+import TextColor from './hoc/TextColor'
 
 class App extends Component {
 
@@ -34,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <h1 className="center purple-text">To-do's for this week</h1>
+        <h1 className="center">To-do's for this week</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
         <AddTodo addTodo={this.addTodo} />
       </div>
@@ -42,4 +43,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default TextColor(App);
